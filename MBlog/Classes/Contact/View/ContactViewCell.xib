@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ContactViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EDv-HK-ygC">
+                        <rect key="frame" x="-112" y="-40" width="100" height="116"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="QR5-AK-EgY"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jl1-XL-ghG">
+                        <rect key="frame" x="20" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="gTT-JI-RMI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAv-2C-wDN">
+                        <rect key="frame" x="78" y="9" width="234" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="234" id="3HJ-Tv-f7S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="signature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aT-lR-T0J">
+                        <rect key="frame" x="78" y="34" width="234" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="KV1-x5-MWL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cAv-2C-wDN" firstAttribute="leading" secondItem="jl1-XL-ghG" secondAttribute="trailing" constant="8" symbolic="YES" id="D82-qW-OZl"/>
+                    <constraint firstItem="cAv-2C-wDN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="Emm-c0-NcX"/>
+                    <constraint firstItem="cAv-2C-wDN" firstAttribute="trailing" secondItem="0aT-lR-T0J" secondAttribute="trailing" id="G7h-9G-4CO"/>
+                    <constraint firstItem="0aT-lR-T0J" firstAttribute="top" secondItem="cAv-2C-wDN" secondAttribute="bottom" constant="4" id="GoX-eP-oi0"/>
+                    <constraint firstItem="jl1-XL-ghG" firstAttribute="leading" secondItem="EDv-HK-ygC" secondAttribute="trailing" constant="32" id="JOY-QJ-XWi"/>
+                    <constraint firstItem="jl1-XL-ghG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="MDv-ru-eNP"/>
+                    <constraint firstItem="EDv-HK-ygC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-48" id="Md8-Zo-PyN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0aT-lR-T0J" secondAttribute="bottom" constant="0.5" id="XnH-NB-kfb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EDv-HK-ygC" secondAttribute="bottom" constant="-24.5" id="bOK-F5-KCJ"/>
+                    <constraint firstItem="0aT-lR-T0J" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="kUV-KC-M0X"/>
+                    <constraint firstItem="jl1-XL-ghG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tUp-wf-l1L"/>
+                    <constraint firstItem="0aT-lR-T0J" firstAttribute="leading" secondItem="cAv-2C-wDN" secondAttribute="leading" id="vCK-Dg-cAA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconName" destination="jl1-XL-ghG" id="Y9P-a8-SIF"/>
+                <outlet property="name" destination="cAv-2C-wDN" id="AjC-3Z-cCh"/>
+                <outlet property="signature" destination="0aT-lR-T0J" id="ISQ-Nx-TiP"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="251"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="0.jpg" width="200" height="200"/>
+    </resources>
+</document>
